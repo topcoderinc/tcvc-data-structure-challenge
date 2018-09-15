@@ -1,0 +1,32 @@
+#summary-section {
+  display: flex;
+  flex-direction: row;
+}
+#summary-section #summary-text {
+  max-width: 60%;
+}
+#summary-section #summary-text #created-by-section {
+  max-width: 50%;
+}
+#summary-section #summary-text #created-by-section h5 {
+  text-align: center;
+}
+#summary-section #summary-text #created-by-section #creators {
+  display: flex;
+  justify-content: center;
+}
+#summary-section #summary-text #created-by-section #creators .creator-name {
+  font-size: 1.2rem;
+  text-align: center;
+}
+#summary-section #poster-img {
+  max-width: 40%;
+  height: 450px;
+}
+
+#seasons {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*# sourceMappingURL=../css/details.css.map */

@@ -1,0 +1,20 @@
+{% extends 'core/base.html' %}
+{% block styles %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div id="popular-container" class="jumbotron text-center m-5">
+        <div id="body-search-form" class="my-0 input-field">
+            <input placeholder="Search" id="body-search" class="form-control mr-sm-2 search" type="text" aria-label="Search">
+        </div>
+    <ul id="popular-shows"></ul>
+    </div>
+{% endblock %}
+
+{% block page-scripts %}
+    {% load static %}
+    <script src="{% static 'js/api.js' %}"></script>
+    <script src="{% static 'js/index.js' %}"></script>
+{% endblock %}

@@ -1,0 +1,43 @@
+{% extends 'core/base.html' %}
+
+{% block styles %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/details.css' %}">
+
+{% endblock %}
+
+
+{% block content %}
+    <div id="details-container" class="jumbotron m-5">
+
+        <div id="summary-section">
+            <div id="summary-text" class="mr-auto">
+                <h2 id="title"></h2>
+                <h4 id="Overview-heading">Overview</h4>
+                <p id="overview"></p>
+                <div id="created-by-section">
+                    <h5 id="created-by-header">Created By</h5>
+                    <div id="creators"></div>
+                </div>
+
+            </div>
+            <img id="poster-img" src="#">
+        </div>
+
+        <div id="details-section">
+            <div class="seasons-section">
+                <h3 id="seasons-header">Seasons</h3>
+                <div id="seasons"></div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block page-scripts %}
+    <script>
+        const showId = '{{ show_id }}'
+    </script>
+    <script src="{% static 'js/api.js' %}"></script>
+    <script src="{% static 'js/details.js' %}"></script>
+
+{% endblock %}

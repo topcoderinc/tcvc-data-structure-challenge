@@ -1,0 +1,35 @@
+#summary-section {
+  display: flex;
+  flex-direction: row;
+
+  #summary-text {
+    max-width: 60%;
+
+    #created-by-section {
+      max-width: 50%;
+
+      h5 {
+        text-align: center;
+      }
+
+      #creators {
+        display: flex;
+        justify-content: center;
+        .creator-name {
+          font-size: 1.2rem;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  #poster-img {
+    max-width: 40%;
+    height: 450px;
+  }
+}
+
+#seasons {
+  display: flex;
+  flex-wrap: wrap;
+}
