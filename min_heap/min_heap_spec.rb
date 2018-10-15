@@ -71,7 +71,7 @@ RSpec.describe MinHeap, type: Class do
       tree.insert(root, node4) #85
       tree.insert(root, node5) #86
       tree.delete(root, node5.rating)
-      expect(tree.find(root, node5.rating).rating).to be_nil
+      expect(tree.find(root, node5.rating)).to be_nil
     end
 
     it "properly deletes a right-left node" do
@@ -81,7 +81,7 @@ RSpec.describe MinHeap, type: Class do
       tree.insert(root, node5) #86
       tree.insert(root, node11) #98
       tree.delete(root, node11.rating)
-      expect(tree.find(root, node11.rating).rating).to be_nil
+      expect(tree.find(root, node5.rating)).to be_nil
     end
   end
 
