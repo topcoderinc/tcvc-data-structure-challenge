@@ -66,8 +66,4 @@ RSpec.describe Graph do
   it 'should have max_degree' do
     expect(@g.max_degree).to eq 7
   end
-
-  it 'get adjacency matrix' do
-    expect(@g.adjacency_matrix).to eq 0
-  end
 end
