@@ -1,0 +1,13 @@
+<div class='container-fluid'>
+  <div='check'>
+  <%= form_for current_user, url: {action: "update_checklist", controller: "user_checklist"}, method: :patch do |f| %>
+    <%= f.fields_for :checklist do |c| %>
+      <% current_user.checklist.each do |todo, completed| %>
+        <%= c.check_box todo, checked: completed %>&nbsp;<%= c.label todo %><br />
+      <% end %>
+    <% end %>
+
+    <%= f.submit("Save") %>
+  <% end %>
+  </div>
+</div>

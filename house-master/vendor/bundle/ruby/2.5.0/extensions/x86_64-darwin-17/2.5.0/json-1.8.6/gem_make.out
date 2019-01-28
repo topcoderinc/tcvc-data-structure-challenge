@@ -1,0 +1,13 @@
+current directory: /Users/kenagano/learning/house/vendor/bundle/ruby/2.5.0/gems/json-1.8.6/ext/json
+/Users/kenagano/.rvm/rubies/ruby-2.5.1/bin/ruby -r ./siteconf20180829-59736-pcjm9f.rb extconf.rb
+creating Makefile
+
+current directory: /Users/kenagano/learning/house/vendor/bundle/ruby/2.5.0/gems/json-1.8.6/ext/json
+make "DESTDIR=" clean
+
+current directory: /Users/kenagano/learning/house/vendor/bundle/ruby/2.5.0/gems/json-1.8.6/ext/json
+make "DESTDIR="
+make: Nothing to be done for `all'.
+
+current directory: /Users/kenagano/learning/house/vendor/bundle/ruby/2.5.0/gems/json-1.8.6/ext/json
+make "DESTDIR=" install

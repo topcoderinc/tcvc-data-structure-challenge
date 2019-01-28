@@ -1,0 +1,17 @@
+<div class="container-fluid list">
+  <p id="show"><strong>Address: </strong> <%= @house.address %></p>
+  <p id="show"><b>Cost of House: </b><%= @house.cost %></p>
+  <p id="show"><b>Down payment amount: </b><%= @house.down_payment %></p>
+  <p id="show"><b>Loan Interest: </b> <%= @house.interest %></p>
+  <p id="show"><b>Loan Period: </b><%= @house.period %></p>
+  <p id="show"><b>Local property taxes: </b><%= @house.taxes %></p>
+  <p id="show"><b>Home Owners Insurance: </b> <%= @house.insurance %></p>
+  <p id="show"><b>Monthly Mortgage Payment: </b> <%= @house.payment %></p>
+  <p id="show"><b>Monthly Total Payment: </b> <%= @house.total %></p>
+
+
+<%= link_to "Edit", edit_user_house_path(current_user.id, @house), class: 'btn btn-success' %>
+<%= link_to "Delete", user_house_path(@house.user, @house), method: :delete, class: 'btn btn-danger', data: {confirm: 'Are you sure you want to delete this calculation?'} %>
+<%= link_to "Back",user_houses_path(current_user.id), class: 'btn btn-warning' %>
+
+</div>

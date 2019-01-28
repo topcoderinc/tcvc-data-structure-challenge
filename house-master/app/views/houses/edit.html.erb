@@ -1,0 +1,20 @@
+
+<h1>Edit Calculation</h1>
+
+<%= form_for [@house.user, @house] do |f| %>
+<%= render(:partial => 'form', :locals => {:f => f}) %>
+<button id="btnCalculate" type="button" class="btn btn-default">Calculate Mortgage</button>
+</br>
+<p><b><strong>Total Monthly Payment:</strong><span id="outMonthly"></span></b></p>
+<%= f.label :taxes, "Annual Property Taxes" %>
+<%= f.text_field :taxes %>
+
+<%= f.label :insurance, "Annual Home Owners Insurance" %>
+<%= f.text_field :insurance %>
+<button id="btnTotal"type="button" class="btn btn-default">Calculate Total Bank Payment</button>
+<p><b><strong>Total Monthly Bank Payment:</strong><span id="outTotal"></span></b></p>
+</br>
+
+<%= f.submit "Save" %>
+<% end %>
+</div>

@@ -1,0 +1,36 @@
+<div class="col-lg-9 col-sm-8 timeline-container">
+  <div class="jumbotron main_picture">
+    <h1>Housing</h1>
+    <p class='home'>Make your house buying process easier</p>
+      <% if user_signed_in? %>
+      <% else %>
+      <%= link_to "Log In", new_user_session_path, class: 'btn btn-success' %> or
+      <%= link_to "Sign Up", new_user_registration_path, class: 'btn btn-warning' %> today!
+      <%= link_to "Sign in with Facebook", user_facebook_omniauth_authorize_path, class: 'btn btn-primary' %>
+    <% end %>
+  </div>
+
+  <div class='wrapper'>
+    <div>
+      <span class="ion ion-calculator"></span>
+      <%= calc(current_user) %>
+      <h4>Calculate your mortgage payments and save them right on your site</h4>
+    </div>
+    <div>
+      <span class="ion ion-checkmark"></span>
+      <%= checklist(current_user) %>
+      <h4>Create a custom checklist of things to do to get your home buying process finished
+          or use our default checklist to make sure you do the basics
+      </h4>
+    </div>
+    <div>
+      <span class="ion ion-lightbulb"></span>
+      <%= tips(current_user) %>
+      <h4>Get trusted advice from people who aren't going to make a commission off your home buying experience</h4>
+    </div>
+  </div>
+</div>
+
+<div class="col-lg-3 col-sm-4 hidden-sm-down">
+  <%= render 'sidebar/collapsible_navbar' %>
+</div>

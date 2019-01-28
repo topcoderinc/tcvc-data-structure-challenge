@@ -1,0 +1,16 @@
+<%= f.label :address, "Address of the House" %>
+<%= f.text_field :address %>
+
+<%= f.label :cost %>
+<%= f.text_field :cost %>
+
+<%= f.label :down_payment, "Amount of Down Payment" %>
+<%= f.text_field :down_payment %>
+
+<%= f.label :interest, "Interest Rate" %>
+<%= f.text_field :interest, placeholder: "In Percentage" %>
+
+<%= f.label :period %>
+<%= f.text_field :period, placeholder: "In Years" %>
+<%= f.hidden_field :payment %>
+<%= f.hidden_field :total %>

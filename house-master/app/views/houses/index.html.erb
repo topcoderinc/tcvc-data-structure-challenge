@@ -1,0 +1,9 @@
+<div class="container-fluid">
+  <h1>All House Calculations</h1>
+  <h3 class="list">
+    <% @houses.each do |f| %>
+      <p><%= link_to f.address, user_house_path(current_user.id, f.id) %></p>
+    <% end %>
+  </h3>
+
+</div>
