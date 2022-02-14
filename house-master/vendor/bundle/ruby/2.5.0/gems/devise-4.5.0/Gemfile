@@ -4,7 +4,7 @@ source "https://rubygems.org"
 
 gemspec
 
-gem "rails", "~> 5.2"
+gem "rails", "~> 5.2", ">= 5.2.6.2"
 gem "omniauth", "~> 1.3"
 gem "oauth2"
 gem "omniauth-oauth2"
@@ -12,9 +12,9 @@ gem "rdoc"
 
 gem "activemodel-serializers-xml", github: "rails/activemodel-serializers-xml"
 
-gem "rails-controller-testing"
+gem "rails-controller-testing", ">= 1.0.1"
 
-gem "responders", "~> 2.4"
+gem "responders", "~> 2.4", ">= 2.4.0"
 
 group :test do
   gem "omniauth-facebook"
